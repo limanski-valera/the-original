@@ -7,11 +7,15 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowLeftIcon } from '@radix-icons/vue';
+
 useSeoMeta({
 	title: 'Create task',
 });
 
-import { ArrowLeftIcon } from '@radix-icons/vue';
+definePageMeta({
+	middleware: ['create-middleware'],
+});
 </script>
 
 <style scoped></style>
